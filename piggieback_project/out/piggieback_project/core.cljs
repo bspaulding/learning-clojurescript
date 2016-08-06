@@ -1,5 +1,9 @@
 (ns piggieback-project.core
-	(:require [weasel.repl :as repl]))
+	(:require [cljs.nodejs :as nodejs]))
 
-(when-not  (repl/alive?)
-	(repl/connect "ws://localhost:9001"))
+(nodejs/enable-util-print!)
+
+(defn -main  [& args]
+	(println  "hello world from node.js"))
+
+(set! *main-cli-fn* -main)
