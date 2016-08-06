@@ -1,0 +1,2 @@
+;; Analyzed by ClojureScript 1.8.51
+{:name piggieback-project.core, :doc nil, :excludes #{}, :use-macros nil, :require-macros nil, :uses nil, :requires {repl weasel.repl, weasel.repl weasel.repl}, :imports nil}
